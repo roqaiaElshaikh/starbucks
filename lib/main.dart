@@ -1,11 +1,7 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:starbucks/constants.dart';
+import 'package:starbucks/featured/featured_screen.dart';
 import 'package:starbucks/home/home_screen.dart';
-import 'package:starbucks/menu/menu_screen.dart';
-import 'package:starbucks/prosucts/products_screen.dart';
-import 'package:starbucks/start/contentes/start_body.dart';
+import 'package:starbucks/my_navigator.dart';
 import 'package:starbucks/start/start_screen.dart';
 
 void main() {
@@ -25,7 +21,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         //primarySwatch: defo
       ),
-      home: StartScreen(),
+      home: MyNavigator(),
     );
   }
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:starbucks/prosucts/products_screen.dart';
+import 'package:starbucks/featured/featured_screen.dart';
+import 'package:starbucks/products/products_screen.dart';
+import 'package:starbucks/start/contentes/Featured_card.dart';
 
 import '../../constants.dart';
 
@@ -34,46 +36,13 @@ class _StartCategoryState extends State<StartCategory> {
   Widget buildCategory(int index) {
     return GestureDetector(
       onTap: () {
-        setState(() {});
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => FeaturedScreen()));
       },
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10,),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              height: 170,
-              width: 150,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                  gradient: LinearGradient(
-                    begin: Alignment.topRight,
-                    end: Alignment.bottomLeft,
-                    colors: [
-                      Colors.lightBlue,
-                      Colors.pinkAccent,
-                    ],
-                    tileMode: TileMode.repeated
-                  )
-              ),
-              child: Image(
-                image: AssetImage("images/feature.png"),
-                height: 60,
-                width: 60,
-              ),
-            ),
-            SizedBox(height: 15,),
-            Text(
-              "Iced Cofee",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.black87,
-                fontSize: 16,
-              ),
-            ),
-            //SizedBox(height: 5,),
-          ],
-        ),
+        child: FeaturedCard(),
       ),
     );
   }
