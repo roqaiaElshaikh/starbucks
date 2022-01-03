@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 const baseColor= Color(0xffE4DFD7);
 const defoaltcolor =Color(0xff026242);
 const selectColor =Color(0xffC99543);
-bool? login;
+bool? login=true;
 
 //Map food=["Meal", "Bakes","Dessert"] ;
 
@@ -14,7 +14,7 @@ class CategoryData{
   late String img;
 
   CategoryData({
-   required this.name,required this.img
+   required this.name,required this.img,
 });
 }
 

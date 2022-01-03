@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class StartCategoryName extends StatefulWidget {
-  const StartCategoryName( {
+class HomeTitle extends StatefulWidget {
+  const HomeTitle( {
     required this.name,
     Key? key}) : super(key: key);
   final String? name;
 
   @override
-  _StartCategoryNameState createState() => _StartCategoryNameState();
+  _HomeTitleState createState() => _HomeTitleState();
 }
 
-class _StartCategoryNameState extends State<StartCategoryName> {
+class _HomeTitleState extends State<HomeTitle> {
   @override
   Widget build(BuildContext context) {
     return Container(

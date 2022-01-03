@@ -1,12 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:starbucks/constants.dart';
-import 'package:starbucks/home/home_screen.dart';
-import 'package:starbucks/menu/menu_screen.dart';
-import 'package:starbucks/prosucts/products_screen.dart';
-import 'package:starbucks/start/contentes/start_body.dart';
-import 'package:starbucks/start/start_screen.dart';
+import 'package:starbucks/login/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +18,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         //primarySwatch: defo
       ),
-      home: StartScreen(),
+      home: LoginScreen(),
     );
   }
 }

@@ -2,18 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:starbucks/constants.dart';
 
-class UserData extends StatefulWidget {
-  UserData(
+class MyTextField extends StatefulWidget {
+  MyTextField(
       @ required this.hint,
       {Key? key}) : super(key: key);
 
   late String hint;
 
   @override
-  _UserDataState createState() => _UserDataState();
+  _MyTextFieldState createState() => _MyTextFieldState();
 }
 
-class _UserDataState extends State<UserData> {
+class _MyTextFieldState extends State<MyTextField> {
   late String userData;
 
   @override

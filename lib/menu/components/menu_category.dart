@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:starbucks/constants.dart';
-import 'package:starbucks/prosucts/products_screen.dart';
+import 'package:starbucks/products/products_screen.dart';
 
 class Category extends StatefulWidget {
   const Category( {
