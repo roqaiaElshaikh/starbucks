@@ -14,7 +14,7 @@ class CategoryData{
   late String img;
 
   CategoryData({
-   required this.name,required this.img
+   required this.name,required this.img,
 });
 }
 

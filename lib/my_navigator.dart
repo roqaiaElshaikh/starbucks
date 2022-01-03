@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:starbucks/constants.dart';
 import 'package:starbucks/featured/featured_screen.dart';
+import 'package:starbucks/home/home_screen.dart';
 import 'package:starbucks/menu/menu_screen.dart';
 import 'package:starbucks/products/products_screen.dart';
 import 'package:starbucks/start/start_screen.dart';
@@ -19,7 +20,7 @@ class _MyNavigatorState extends State<MyNavigator> {
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    StartScreen(),
+    HomeScreen(),
     MenuScreen(),
     Scaffold(),
     Scaffold()

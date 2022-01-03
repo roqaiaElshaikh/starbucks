@@ -2,9 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:starbucks/build_app_bar.dart';
 import 'package:starbucks/constants.dart';
-import 'package:starbucks/products/components/product_card.dart';
-import 'package:starbucks/start/contentes/Featured_card.dart';
-
+import 'package:starbucks/Featured_card.dart';
+import 'package:starbucks/product_card.dart';
 import '../bar.dart';
 
 class FeaturedScreen extends StatelessWidget {

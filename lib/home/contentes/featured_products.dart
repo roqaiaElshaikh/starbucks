@@ -2,19 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:starbucks/featured/featured_screen.dart';
 import 'package:starbucks/products/products_screen.dart';
-import 'package:starbucks/start/contentes/Featured_card.dart';
-
 import '../../constants.dart';
+import '../../Featured_card.dart';
 
-class StartCategory extends StatefulWidget {
-  const StartCategory( {
+class FeaturedProducts extends StatefulWidget {
+  const FeaturedProducts( {
     Key? key}) : super(key: key);
 
   @override
-  _StartCategoryState createState() => _StartCategoryState();
+  _FeaturedProductsState createState() => _FeaturedProductsState();
 }
 
-class _StartCategoryState extends State<StartCategory> {
+class _FeaturedProductsState extends State<FeaturedProducts> {
 
   @override
   Widget build(BuildContext context) {

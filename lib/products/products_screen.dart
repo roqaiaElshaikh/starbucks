@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../build_app_bar.dart';
 import '../constants.dart';
-import 'components/product_card.dart';
+import '../product_card.dart';
 
 class productsScreen extends StatelessWidget {
   const productsScreen({

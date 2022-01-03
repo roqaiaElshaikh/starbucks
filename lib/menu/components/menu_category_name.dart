@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MenuCategoryName extends StatelessWidget {
-  const MenuCategoryName({
+class MenuCategoryTitle extends StatelessWidget {
+  const MenuCategoryTitle({
     required this.name,
     Key? key}) : super(key: key);
 
