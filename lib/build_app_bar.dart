@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 AppBar BuildAppBar (String myTitle, BuildContext context) {
   return AppBar(
-    shadowColor: Colors.white,
     backgroundColor: Colors.white,
     iconTheme: IconThemeData(color: Colors.black),
+    elevation: 0.0,
     title: Text(
       myTitle,
       textAlign: TextAlign.start,

@@ -23,12 +23,15 @@ class MenuCategoryTitle extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10),
-            child: Text(
-              this.name!,
-              style: TextStyle(
-                fontSize:20 ,
-                fontWeight: FontWeight.w600,
-                color: Color(0xff9D5217)
+            child: Padding(
+              padding: const EdgeInsets.only(top: 2.0),
+              child: Text(
+                this.name!,
+                style: TextStyle(
+                  fontSize:20 ,
+                  fontWeight: FontWeight.w600,
+                  color: Color(0xff9D5217)
+                ),
               ),
             ),
           )

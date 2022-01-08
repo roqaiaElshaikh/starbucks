@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:starbucks/constants.dart';
-import 'package:starbucks/products/products_screen.dart';
+import 'package:starbucks/screens/products_screen.dart';
 
 class Category extends StatefulWidget {
   const Category( {
@@ -58,7 +58,6 @@ class _CategoryState extends State<Category> {
               ),
             ),
             Container(
-              //margin: EdgeInsets.only(top: 5), //top padding 5
               height: 5,
               width: 35,
               decoration: BoxDecoration(

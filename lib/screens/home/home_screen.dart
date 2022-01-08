@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:starbucks/build_app_bar.dart';
 import 'package:starbucks/constants.dart';
 import 'package:starbucks/product_card.dart';
-import '../bar.dart';
 import 'contentes/featured_products.dart';
 import 'contentes/home_title.dart';
 
@@ -23,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               HomeTitle(name: "FEATURED",),
               FeaturedProducts(),
-              Bar(),
+              Divider(),
               HomeTitle(name: "PREVIOS ORDERS"),
               SizedBox(
                 height: 220,
@@ -33,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                   itemBuilder: (context, index) => ProductCard(),
                 ),
               ),
-              Bar(),
+              Divider(),
               HomeTitle(name: "PREVIOS ORDERS"),
               SizedBox(
                 height: 220,

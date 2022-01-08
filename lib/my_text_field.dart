@@ -5,9 +5,11 @@ import 'package:starbucks/constants.dart';
 class MyTextField extends StatefulWidget {
   MyTextField(
       @ required this.hint,
+      @ required this.icon,
       {Key? key}) : super(key: key);
 
   late String hint;
+  late Icon icon;
 
   @override
   _MyTextFieldState createState() => _MyTextFieldState();
@@ -23,7 +25,7 @@ class _MyTextFieldState extends State<MyTextField> {
         child: TextField(
           //textInputAction: widget.hint=="User name"? TextInputAction.next: TextInputAction.send,
           decoration: InputDecoration(
-            icon: widget.hint=="mail"? Icon(Icons.mail,color: defoaltcolor,): Icon(Icons.password_rounded,color: defoaltcolor,),
+            icon: widget.icon,
             hintText: widget.hint,
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(20.0),

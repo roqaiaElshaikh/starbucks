@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:starbucks/featured/featured_screen.dart';
-import 'package:starbucks/products/products_screen.dart';
-import '../../constants.dart';
-import '../../Featured_card.dart';
+import 'package:starbucks/screens/featured_screen.dart';
+import 'package:starbucks/screens/products_screen.dart';
+
+import '../../../Featured_card.dart';
 
 class FeaturedProducts extends StatefulWidget {
   const FeaturedProducts( {

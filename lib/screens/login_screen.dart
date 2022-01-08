@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:starbucks/my_navigator.dart';
+import 'package:starbucks/screens/singn_up.dart';
 import '../constants.dart';
 import '../my_text_field.dart';
 class LoginScreen extends StatefulWidget {
@@ -33,12 +34,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   SizedBox(height: 20,),
                   Image(
-                    image: AssetImage("images/login.png"),
+                    image: AssetImage("images/splash.png"),
                     height: 200,
                     width: 200,
                   ),
-                  MyTextField("mail"),
-                  MyTextField("Password"),
+                  MyTextField("mail",Icon(Icons.mail_outline)),
+                  MyTextField("Password",Icon(Icons.password)),
                   Container(
                     width: double.infinity,
                     height: 80,
@@ -84,19 +85,26 @@ class _LoginScreenState extends State<LoginScreen> {
                             image: AssetImage("images/facebook.png"),
                           ),
                         ),
-                        GestureDetector(
-                          onTap: () {},
-                          child: Text(
-                            "Sign up",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w700,
-                              decoration: TextDecoration.underline,
-                              color: Color(0xff026242),
-                            ),
-                          ),
-                        ),
                       ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 25.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(builder: (context) => SignUp()));
+                      },
+                      child: Text(
+                        "Don't have an account!",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                          decoration: TextDecoration.underline,
+                          color: Color(0xff026242),
+                        ),
+                      ),
                     ),
                   ),
                 ],
